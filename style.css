@@ -14,10 +14,12 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 300px;
+  position: relative;
 }
 
 table {
   border-collapse: collapse;
+  position: relative;
 }
 table td {
   border: 5px solid whitesmoke;
@@ -41,4 +43,48 @@ td {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+td:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.winning-line {
+  position: absolute;
+  background-color: whitesmoke;
+  transform-origin: center;
+  z-index: 2;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #ffff;
+    color: #ffff;
+    background-color: #00B0EF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #96cadd;
 }
